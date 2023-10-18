@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2023 at 11:26 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.3.16
+-- Generation Time: Oct 18, 2023 at 11:48 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -35,15 +35,18 @@ CREATE TABLE `dtobat` (
   `kd_sediaan` varchar(10) DEFAULT NULL,
   `harga` decimal(10,2) NOT NULL,
   `expire_date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `dtobat`
 --
 
 INSERT INTO `dtobat` (`id_obat`, `image`, `nama_obat`, `kd_golongan`, `kd_sediaan`, `harga`, `expire_date`) VALUES
-(8, 'Repsol-652e37a71c8ee.png', 'Repsol', 'K', 'Crem', '12345.00', '2023-10-17'),
-(9, 'Paracetamol-652f9ca60f3d0.png', 'Paracetamol', 'K', 'Tab', '1222411.00', '2023-11-03');
+(10, 'xanax-652fa8e8d1407.png', 'xanax', 'PN', 'Tab', '100000.00', '2041-11-05'),
+(11, 'Panadol-652fa91a39121.png', 'Panadol', 'OB', 'Tab', '20000.00', '2030-02-21'),
+(12, 'Stop Cold-652fa94e6958a.png', 'Stop Cold', 'OBT', 'Tab', '4000.00', '2032-07-30'),
+(13, 'amoxicillin-652fa97c27a41.png', 'amoxicillin', 'K', 'Tab', '50000.00', '2027-09-15'),
+(14, 'Kalpanax-652fa9ba82d05.png', 'Kalpanax', 'OB', 'Crem', '12500.00', '2028-04-01');
 
 -- --------------------------------------------------------
 
@@ -54,7 +57,7 @@ INSERT INTO `dtobat` (`id_obat`, `image`, `nama_obat`, `kd_golongan`, `kd_sediaa
 CREATE TABLE `golongan` (
   `kode` varchar(10) NOT NULL,
   `nama` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `golongan`
@@ -75,7 +78,7 @@ INSERT INTO `golongan` (`kode`, `nama`) VALUES
 CREATE TABLE `sediaan` (
   `kode` varchar(10) NOT NULL,
   `nama` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `sediaan`
@@ -119,7 +122,7 @@ ALTER TABLE `sediaan`
 -- AUTO_INCREMENT for table `dtobat`
 --
 ALTER TABLE `dtobat`
-  MODIFY `id_obat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_obat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
