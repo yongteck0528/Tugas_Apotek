@@ -85,7 +85,8 @@
                         </td>
                         <td align="center">
                             <a href="obat.php?aksi=edit&id_obat=<?= $data['id_obat']; ?>"><img src='icon/edit.ico' width='20' height='20' title='edit'/></a> |
-                            <a href="obat.php?aksi=hapus&id_obat=<?= $data['id_obat']; ?>" onclick="return confirm('Yakin Hapus?')"><img src='icon/delete.ico' width='20' height='20' title='delete'/></a>
+                            <a href="obat.php?aksi=hapus&id_obat=<?= $data['id_obat']; ?>&img=<?= $data['image']; ?>" onclick="return confirm('Yakin Hapus?')"><img src='icon/delete.ico' width='20' height='20' title='delete'/></a>
+                            
                         </td>
                     </tr>
                     <?php

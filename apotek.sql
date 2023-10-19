@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2023 at 11:48 AM
+-- Generation Time: Oct 19, 2023 at 09:41 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -42,11 +42,11 @@ CREATE TABLE `dtobat` (
 --
 
 INSERT INTO `dtobat` (`id_obat`, `image`, `nama_obat`, `kd_golongan`, `kd_sediaan`, `harga`, `expire_date`) VALUES
-(10, 'xanax-652fa8e8d1407.png', 'xanax', 'PN', 'Tab', '100000.00', '2041-11-05'),
 (11, 'Panadol-652fa91a39121.png', 'Panadol', 'OB', 'Tab', '20000.00', '2030-02-21'),
 (12, 'Stop Cold-652fa94e6958a.png', 'Stop Cold', 'OBT', 'Tab', '4000.00', '2032-07-30'),
 (13, 'amoxicillin-652fa97c27a41.png', 'amoxicillin', 'K', 'Tab', '50000.00', '2027-09-15'),
-(14, 'Kalpanax-652fa9ba82d05.png', 'Kalpanax', 'OB', 'Crem', '12500.00', '2028-04-01');
+(14, 'Kalpanax-652fa9ba82d05.png', 'Kalpanax', 'OB', 'Crem', '12500.00', '2028-04-01'),
+(19, 'xanax-6530dd8b8025e.png', 'xanax', 'PN', 'Tab', '50000000.00', '2023-10-26');
 
 -- --------------------------------------------------------
 
@@ -122,7 +122,7 @@ ALTER TABLE `sediaan`
 -- AUTO_INCREMENT for table `dtobat`
 --
 ALTER TABLE `dtobat`
-  MODIFY `id_obat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_obat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Constraints for dumped tables
